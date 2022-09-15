@@ -1,22 +1,75 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  }
- body {
-  background-color: rgb(197, 17, 17); 
-  font-family: Verdana, sans-serif; 
-  font-size: 100%;
-  }
- h1 {
-  font-size: 200%; 
-  color: navy; 
-  text-align: center;
-  }
- h2 {
-  font-size: 150%; 
-  color: red; 
-  padding-left: 15px;
-  }
- p,ul,li,td {
-  color: blueviolet; 
-  }
+@font-face { /* Définition d'une nouvelle police nommée MyriadPro */
+  font-family: 'MyriadPro-Bold';
+  src: url('/font/myriad-pro-master/MyriadPro-Bold.eot') format ('embedded-opentype'),
+      url('/font/myriad-pro-master/MyriadPro-Bold.svg') format ('svg'),
+      url('font/myriad-pro-master/MyriadPro-Bold.ttf') format('truetype'), 
+      url('font/myriad-pro-master/MyriadPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MyriadPro-It';
+  src: url(font/myriad-pro-master/MyriadPro-It.eot) format ('embedded-opentype'),
+  url(/font/myriad-pro-master/MyriadPro-It.svg) format ('svg'),
+  url(/font/myriad-pro-master/MyriadPro-It.ttf) format('truetype'), 
+  url(/font/myriad-pro-master/MyriadPro-It.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url(/font/myriad-pro-master/MyriadPro-Regular.eot) format('embedded-opentype'),
+  url(/font/myriad-pro-master/MyriadPro-Regular.svg) format('svg'),
+  url(/font/myriad-pro-master/MyriadPro-Regular.ttf) format('truetype'),
+  url(/font/myriad-pro-master/MyriadPro-Regular.woff) format('woff');
+}
+
+*{
+  font-family: 'MyriadPro-Bold', 'MyriadPro-It', 'MyriadPro-Regular', sans-serif
+ }
+
+
+
+body
+{
+  background-color: white;
+  color: black;
+
+}
+dl {
+  float: right;
+  text-align: right;
+
+}
+footer{
+  clear: both;
+}
+ul{
+  display: block;
+  height: 50px;
+  margin: 0px;
+  background-color: black;
+  font-weight: 900;
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+li{
+  display: inline;
+  float: left;
+  padding: auto;
+  width: 120px;
+  height: 35px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+li a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+li a:hover{
+  background-color: white;
+  font-weight: 900;
+  color: darkblue;
+}
