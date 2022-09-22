@@ -15,16 +15,16 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="img.logo">
-                    <img src="img/logo.png" alt="Logo">
+            <div class="imglogo">
+                    <img src="img/logo.png" alt="Logo" class="logo"><img src="img/logo_mini.jpg" alt="logomini" class="logomini">
             </div>
             
             <div class="adress">
-                    <dd>Tél. : 05 63 25 85 49</dd>
-                    <dd>Fax. : 05 63 54 78 45</dd>
-                    <dd>Mèl. : aed@hotmail.fr</dd><br>
-                    <dd>9 bd des Peupliers</dd>
-                    <dd>31000 TOULOUSE</dd>
+                    <dd class="contact">Tél. : 05 63 25 85 49</dd>
+                    <dd class="contact">Fax. : 05 63 54 78 45</dd>
+                    <dd class="contact">Mèl. : aed@hotmail.fr</dd><br>
+                    <dd class="villerue">9 bd des Peupliers</dd>
+                    <dd class="villerue">31000 TOULOUSE</dd>
             </div>
 
         </div>
@@ -41,26 +41,44 @@
                 <li class="nav"><a href="#">CONTACT</a>
             </ul>
         </nav>
+        <nav class="navmob">     
+            <ul class="navmob">
+                <li class="navmob"><a href="#">ACCUEIL</a>
+                <li class="navmob"><a href="#">AUTO</a>
+                <li class="navmob"><a href="#">MOTO</a>
+                <li class="navmob"><a href="#">BATEAU</a>
+                <li class="navmoblogo"><a href="#">CONTACT</a>
+            </ul>
+        </nav>
     <section class="entete">
-        <div class="img.volant">
-            <img src="img/volant.png" alt="volant">
+        <div id="img.volant">
+            <img src="img/volant.png" class="image1120" alt="volant">
+            <img src="img/volant.993.png" class="image993" alt="volant.993">
+            <img src="img/volant.704.png" alt="image.704" class="image704"><img src="img/volantentetemobile.jpg" alt="volantentetemobile" class="imagemobile">
         </div>
-        <h1 class="title">
-            Prêt(e) pour une expérience de conduite complète ?
-        </h1>
-        <p>
-            Pour apprendre à conduire ou naviguer, notre auto-bateau ecole vous reçoit du lundi au samedi. <br>
-            Notre équipe de professionnels vous accompagne et vous conseille tout le long de la formation pour le jour de l'examen vous soyez au point. <br>
-            Pour plus d'informations, contactez nous ! 
-        </p>
+        <div class="sujet">
+            <h1 class="title">
+                Prêt(e) pour une expérience de conduite complète ?
+            </h1>
+            <p>
+                Pour apprendre à conduire ou naviguer, notre auto-bateau ecole vous reçoit du lundi au samedi. <br>
+                Notre équipe de professionnels vous accompagne et vous conseille tout le long de la formation pour le jour de l'examen vous soyez au point. <br>
+                Pour plus d'informations, contactez nous ! 
+            </p>
+    </div>
     </section>
     
     <main>
-        <h1 class="promotions">PROMOTIONS</h1> 
+        <div class="promotions">
+            <div class="left">
+                <h1 class="promotions">PROMOTIONS</h1>     
+            </div>
+            <div class="right"></div>
+        </div>
         <div class="grid-main">
             <div class="produit">
                 <h1 class="prix"><span class="€">€</span>670</h1>
-                <img src="img/moto.png" alt="moto">
+                <img src="img/moto.png" alt="moto" class="init"><img src="img/moto336.jpg" alt="moto336" class="image336"><img src="img/motomobile.jpg" alt="motomobile" class="imagemobile">
                 <h2 class="permis">Permis A1/A2</h2>
                 <p class="details">Inscription <br> 
                     Forfait Code <br>
@@ -76,7 +94,7 @@
             
             <div class="produit">
                 <h1 class="prix"><span class="€">€</span>770</h1>
-                <img src="img/volant_mini.png" alt="auto">
+                <img src="img/volant_mini.png" alt="auto"class="init"><img src="img/volant336.jpg" alt="volant336" class="image336"><img src="img/volantmobile.jpg" alt="volantmobile" class="imagemobile">
                 <h2 class="permis">Permis BEA</h2>
                 <p class="details">Inscription <br> 
                     Forfait Code <br>
@@ -92,7 +110,7 @@
 
             <div class="produit">
                 <h1 class="prix"><span class="€">€</span>295</h1>
-                <img src="img/bateau.png" alt="bateau">
+                <img src="img/bateau.png" alt="bateau"class="init"><img src="img/bateau336.png" alt="image336" class="image336"><img src="img/bateaumobile.jpg" alt="bateaumobile" class="imagemobile">
                 <h2 class="permis">Permis Côtier</h2>
                 <p class="details">16 ans minimun <br> 
                     8 h de théorique<br>
@@ -107,7 +125,7 @@
 
             <div class="produit">
                 <h1 class="prix"><span class="€">€</span>1260</h1>
-                <img src="img/volant_mini.png" alt="auto">
+                <img src="img/volant_mini.png" alt="auto"class="init"><img src="img/volant336.jpg" alt="volant336" class="image336"><img src="img/volantmobile.jpg" alt="volantmobile" class="imagemobile">
                 <h2 class="permis">Conduite accompagée</h2>
                 <p class="details">Inscription/Fournitures<br> 
                     Forfait Code<br>
@@ -126,11 +144,11 @@
     <footer>
         <ul class="footer">
             <li>&copy 2005/2019</li>
-            <li class="footer">Tous droits réservés</li>
-            <li class="footer">Auto École DUCHEMIN</li>
-            <li class="footer">AGRÉMENT 11-142 / SIRET 31454400300045</li>
+            <li class="copy">Tous droits réservés</li>
+            <li class="autoecole">Auto École DUCHEMIN</li>
+            <li class="AGRÉMENT">AGRÉMENT 11-142 / SIRET 31454400300045</li>
         </ul>
-        <img src="img/facebook.jpg" alt="fb">
+        <img src="img/facebook.jpg" alt="fb" class="fb">
 
     </footer>
 </body>

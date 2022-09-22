@@ -44,8 +44,11 @@ header{
   padding: 0 70px;
   margin: 37px 20px;
 }
-.img.logo{
+.imglogo{
   flex: 2 1 auto;
+}
+.logomini{
+  display: none;
 }
 .adress{
   flex: 1 1 auto;
@@ -69,6 +72,12 @@ li.nav{
   vertical-align: middle;
 
 }
+li.navmob{
+  display: none;
+}
+li.navmoblogo{
+  display: none;
+}
 nav.nav a{
   display: block;
   text-overflow: clip;
@@ -76,7 +85,7 @@ nav.nav a{
   padding: 17px 30px;
   text-decoration: none;
   color:white;
-  background-color: black;
+  background-color: #1a1a1a;
 
 }
 nav.nav a:hover, li.nav:hover{
@@ -90,13 +99,20 @@ section{
   flex-direction: column;
   text-align: center;
 }
-section .img{
-  overflow: hidden;
+.image993{
+  display: none;
+}
+.image704{
+  display: none;
+}
+.volantentetemobile{
+  display: none;
 }
 
 section h1{
   font-size: 38px;
   letter-spacing: 1px;
+  margin-top: 30px;
 }
 section p{
   margin-top: 20px;
@@ -106,11 +122,29 @@ section p{
   text-align: center;
 }
 
+div.promotions{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
+div.promotions div.left{
+  flex: 0 0 20px;
+  }
+div.promotions div.right{
+  flex: 0 0 80%;
+  margin-top: 35px;
+  height: 7px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
 
 main h1.promotions{
   margin-top: 20px;
   margin-left: 30px;
   margin-bottom: 30px;
+  margin-right: 10px;
   font-size: 25px;
   text-align: left;
   text-decoration: underline;
@@ -142,6 +176,12 @@ h1.prix{
   font-size: 24px;
   color: #6690a1;
   font-weight: bold;
+}
+.image336{
+  display: none;
+}
+.imagemobile{
+  display: none;
 }
 main h2.permis{
   height: 40px;
@@ -189,8 +229,176 @@ footer ul.footer li{
   font-size: 16px;
   text-align: left;
 }
-li.footer::before{
+li.copy::before{
   content : "\2022";
   margin-right: 3px;
 }
+li.autoecole::before{
+  content : "\2022";
+  margin-right: 3px;
+}
+li.AGRÉMENT::before{
+  content : "\2022";
+  margin-right: 3px;
+}
+@media screen and (max-width: 1057px) {
+ .image1120{
+  display: none;
+ }
+ .image993{
+  display: inline;
+  justify-content: center;
+ } 
+ .image704{
+  display: none;
+ }
+}
 
+@media screen and (max-width: 768px) {
+  .image1120{
+    display: none;
+  }
+  .image993{
+    display: none;
+  } 
+  .image704{
+    display: inline;
+    justify-content: center;
+  
+  }   
+  .adress{
+    text-align: center;
+  }
+  .contact{
+    display: inline;
+  }
+  .villerue{
+    display: inline;
+  }
+  div.promotions div.right{
+    flex: 0 0 70%;
+  }
+  .grid-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .produit{
+    display: grid;
+    justify-content: center;
+    width: 336px;
+    background-color: #f6f6f6;
+  }
+  .init{
+    display: none;
+  }
+  .image336{
+    display: inline;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+  .fb{
+    order: -1;
+    margin-bottom: 20px;
+  }
+  li.footer::before{
+    content : "\2022";
+    margin-right: 3px;
+  }
+  li.AGRÉMENT::before{
+    display: none;
+  }
+  li.AGRÉMENT{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px){
+  .image336{
+    display: none;
+  }
+  .image993{
+    display: none;
+  }
+  .image1120{
+    display: none;
+  }
+  .image704{
+    display: none;
+  }
+  .imagemobile{
+    display: inline;
+  }
+  .grid-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .produit{
+    display: grid;
+    justify-content: center;
+    width: 512px;
+    background-color: #f6f6f6;
+  }
+  header{
+    margin: 0;
+  }
+  .logo{
+    display: none;
+  }
+  .logomini{
+    display: inline;
+  }
+  .wrapper{
+    margin: 0;
+    padding: 0;
+  }
+  div .imglogo{
+    display: flex;
+    margin: auto;
+    padding: 25px;
+  }
+  div .adress{
+    padding: 25px;
+  }
+  .villerue{
+    display: none;
+  }
+  .nav{
+    display: none;
+  }
+  .navmob{
+    height: 64px;
+    background-color: #1a1a1a;
+  }
+  li.navmob {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    height: 64px;
+    margin: auto;
+    vertical-align: middle;
+  }
+  nav.navmob a{
+    display: block;
+    text-overflow: clip;
+    height: 30px;
+    padding: 17px 30px;
+    text-decoration: none;
+    color:white;
+    background-color: #1a1a1a;
+  }
+  nav.navmob a:hover, li.navmob:hover{
+    background-color: white;
+    text-transform: uppercase;
+    color: #1f6882;
+    font-weight: bold;
+  }
+  div.promotions div.right{
+    flex: 0 0 57%;
+  }
+}
+  
