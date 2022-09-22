@@ -1,75 +1,130 @@
 @font-face { /* Définition d'une nouvelle police nommée MyriadPro */
   font-family: 'MyriadPro-Bold';
-  src: url('/font/myriad-pro-master/MyriadPro-Bold.eot') format ('embedded-opentype'),
-      url('/font/myriad-pro-master/MyriadPro-Bold.svg') format ('svg'),
-      url('font/myriad-pro-master/MyriadPro-Bold.ttf') format('truetype'), 
-      url('font/myriad-pro-master/MyriadPro-Bold.woff') format('woff');
+  src: url(font/myriad-pro-master/MyriadPro-Bold.eot) format ('embedded-opentype'),
+      url(font/myriad-pro-master/MyriadPro-Bold.svg) format ('svg'),
+      url(font/myriad-pro-master/MyriadPro-Bold.ttf) format('truetype'), 
+      url(font/myriad-pro-master/MyriadPro-Bold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'MyriadPro-It';
   src: url(font/myriad-pro-master/MyriadPro-It.eot) format ('embedded-opentype'),
-  url(/font/myriad-pro-master/MyriadPro-It.svg) format ('svg'),
-  url(/font/myriad-pro-master/MyriadPro-It.ttf) format('truetype'), 
-  url(/font/myriad-pro-master/MyriadPro-It.woff) format('woff');
+  url(font/myriad-pro-master/MyriadPro-It.svg) format ('svg'),
+  url(font/myriad-pro-master/MyriadPro-It.ttf) format('truetype'), 
+  url(font/myriad-pro-master/MyriadPro-It.woff) format('woff');
 }
 
 @font-face {
   font-family: 'MyriadPro-Regular';
-  src: url(/font/myriad-pro-master/MyriadPro-Regular.eot) format('embedded-opentype'),
-  url(/font/myriad-pro-master/MyriadPro-Regular.svg) format('svg'),
-  url(/font/myriad-pro-master/MyriadPro-Regular.ttf) format('truetype'),
-  url(/font/myriad-pro-master/MyriadPro-Regular.woff) format('woff');
+  src: url(font/myriad-pro-master/MyriadPro-Regular.eot) format('embedded-opentype'),
+  url(font/myriad-pro-master/MyriadPro-Regular.svg) format('svg'),
+  url(font/myriad-pro-master/MyriadPro-Regular.ttf) format('truetype'),
+  url(font/myriad-pro-master/MyriadPro-Regular.woff) format('woff');
 }
 
 *{
-  font-family: 'MyriadPro-Bold', 'MyriadPro-It', 'MyriadPro-Regular', sans-serif
+  font-family: 'MyriadPro-Bold', 'MyriadPro-It', 'MyriadPro-Regular', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
  }
 
-
-
-body
-{
-  background-color: white;
-  color: black;
-
+header{
+  display: flex;
+} 
+.wrapper{
+  display: flex;
+  flex-direction: row;
 }
-dl {
-  float: right;
+.wrapper{
+  flex: auto; 
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  margin: 37px 20px;
+}
+.img.logo{
+  flex: 2 1 auto;
+}
+.adress{
+  flex: 1 1 auto;
   text-align: right;
+}
+.nav{
+  height: 64px;
+  background-color: #1a1a1a;
+  
 
 }
-footer{
-  clear: both;
+ul.nav{
+  margin-left: 70px;
 }
-ul{
+li.nav{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  height: 64px;
+  margin: auto;
+  vertical-align: middle;
+
+}
+nav.nav a{
   display: block;
-  height: 50px;
-  margin: 0px;
+  text-overflow: clip;
+  height: 30px;
+  padding: 17px 30px;
+  text-decoration: none;
+  color:white;
   background-color: black;
-  font-weight: 900;
-  list-style: none;
-  text-align: left;
-  padding: 0px;
+
 }
-li{
-  display: inline;
-  float: left;
-  padding: auto;
-  width: 120px;
-  height: 35px;
-}
-a{
-  color: white;
-  text-decoration: none;
-}
-li a{
-  position: relative;
-  text-decoration: none;
-  color: white;
-}
-li a:hover{
+nav.nav a:hover, li.nav:hover{
   background-color: white;
-  font-weight: 900;
-  color: darkblue;
+  text-transform: uppercase;
+  color: #1f6882;
+  font-weight: bold;
 }
+section{
+  text-align: center;
+}
+
+section h1{
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+section p{
+margin-top: 20px;
+font-size: 17px;
+line-height: 25px;
+color: #1a1a1a;
+text-align: center;
+}
+
+main{
+  display: grid;
+}
+main h1{
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  
+  margin-left: 30px;
+}
+footer ul.footer li{
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+li.footer::before{
+  content : "\2022";
+  margin-right: 3px;
+}
+
