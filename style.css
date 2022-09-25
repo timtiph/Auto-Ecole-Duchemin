@@ -30,228 +30,26 @@
 
 header{
   display: flex;
+  width: 100%;
 } 
-.wrapper{
+.entete{
   display: flex;
   flex-direction: row;
-}
-.wrapper{
-  flex: auto; 
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 70px;
-  margin: 37px 20px;
+  justify-content: center;
+  width: 80%;
 }
 .imglogo{
+
+}
+.logo{
   flex: 2 1 auto;
 }
-.logomini{
-  display: none;
-}
+
 .adress{
   flex: 1 1 auto;
   text-align: right;
 }
-.nav{
-  height: 64px;
-  background-color: #1a1a1a;
-  
 
-}
-ul.nav{
-  margin-left: 70px;
-}
-li.nav{
-  display: inline-block;
-  font-weight: bold;
-  font-size: 16px;
-  height: 64px;
-  margin: auto;
-  vertical-align: middle;
-
-}
-li.navmob{
-  display: none;
-}
-li.navmoblogo{
-  display: none;
-}
-nav.nav a{
-  display: block;
-  text-overflow: clip;
-  height: 30px;
-  padding: 17px 30px;
-  text-decoration: none;
-  color:white;
-  background-color: #1a1a1a;
-
-}
-nav.nav a:hover, li.nav:hover{
-  background-color: white;
-  text-transform: uppercase;
-  color: #1f6882;
-  font-weight: bold;
-}
-section{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.image993{
-  display: none;
-}
-.image704{
-  display: none;
-}
-.volantentetemobile{
-  display: none;
-}
-
-section h1{
-  font-size: 38px;
-  letter-spacing: 1px;
-  margin-top: 30px;
-}
-section p{
-  margin-top: 20px;
-  font-size: 17px;
-  line-height: 25px;
-  color: #1a1a1a;
-  text-align: center;
-}
-
-div.promotions{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  }
-
-div.promotions div.left{
-  flex: 0 0 20px;
-  }
-div.promotions div.right{
-  flex: 0 0 80%;
-  margin-top: 35px;
-  height: 7px;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-}
-
-
-main h1.promotions{
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  margin-right: 10px;
-  font-size: 25px;
-  text-align: left;
-  text-decoration: underline;
-}
-
-.grid-main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 32px;
-  margin: 0 auto;
-}
-.produit{
-  display: grid;
-  background-color: #f6f6f6;
-}
-h1.prix{
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  justify-content: center;
-  font-size: 60px;
-  color: #6690a1;
-  font-weight: bold;
-  padding: 25px 0;
-}
-.€{
-  padding-top: 14px;
-  font-size: 24px;
-  color: #6690a1;
-  font-weight: bold;
-}
-.image336{
-  display: none;
-}
-.imagemobile{
-  display: none;
-}
-main h2.permis{
-  height: 40px;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  font-size: 24px;
-  color: #000000;
-  font-weight: bold;
-  text-align: center;
-}
-main p.details{
-  height: 183px;
-  font-size: 20px;
-  color: #6690a1;
-  font-weight: bold;
-  text-align: center;
-}
-div.submit{
-  display: grid;
-  justify-items: center;
-}
-input[type="submit"]{
-  width: 160px;
-  height: 32px;
-  border-radius: 4px;
-  background-color: #f15822;
-  border: 0px solid #000000;
-
-}
-div.vide{
-  height: 32px;
-  background-color:#f6f6f6;
-}
-footer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin: 30px;
-}
-footer ul.footer li{
-  display: inline;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: left;
-}
-li.copy::before{
-  content : "\2022";
-  margin-right: 3px;
-}
-li.autoecole::before{
-  content : "\2022";
-  margin-right: 3px;
-}
-li.AGRÉMENT::before{
-  content : "\2022";
-  margin-right: 3px;
-}
-@media screen and (max-width: 1057px) {
- .image1120{
-  display: none;
- }
- .image993{
-  display: inline;
-  justify-content: center;
- } 
- .image704{
-  display: none;
- }
-}
 
 @media screen and (max-width: 768px) {
   .image1120{
